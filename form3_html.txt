@@ -1,0 +1,58 @@
+<!Doctype HTML>
+<html>
+<head>
+    <title>Form</title>
+    <meta charset="UTR-8">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="head">
+        <h1 id="title">
+            How can I help?
+        </h1>
+        <h3 id="desc">
+            Do you have a question or are you interested in working with my team and me?<br>
+            Just fill out the form fields below.
+        </h3>
+    </div>
+    <div class="content">
+        
+            <select name="choose" id="change">
+                <option value disabled selected>I'd like to chat about...</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Consulting Inquiry">Consulting Inquiry</option>
+                <option value="Become a partner">Become a partner</option>
+                <option value="Speaking Request">Speaking Request</option>
+                <option value="Ubersuggest - Account and billing">Ubersuggest - Account and billing</option>
+                <option value="Ubersuggest - I've found a bug">Ubersuggest - I've found a bug</option>
+                <option value="Ubersuggest - I need help using the tool">Ubersuggest - I need help using the tool</option>
+                <option value="Ubersuggest - Feedback and suggestions">Ubersuggest - Feedback and suggestions</option>
+                <option value="Ubersuggest - Feature request">Ubersuggest - Feature request</option>
+            </select>
+
+            <div class="details">
+                <div class="container-wrapper">
+                    <div class="name">
+                        <!-- <label for="fname">First Name</label><br>-->
+                        <input type="text" id="fname" name="fname" placeholder="First Name">
+                    </div>
+                    <div class="name">
+                        <!--<label for="lname">Last Name</label><br>-->
+                        <input type="text" id="lname" name="lname" placeholder="Last Name">
+                    </div>
+                </div>
+
+                <div class="email">
+                   <!-- <label for="email">Email</label><br>-->         
+                    <input type="text" id="email" name="email" placeholder="Email Address">
+                </div>
+                <br>
+            </div>    
+            <div class="message">
+                <!--<label for="message">Message</label><br>  --> 
+                <textarea id="subject" name="subject" placeholder="Message [remember, short & sweet please]" style="height:100px"></textarea>
+            </div>
+        </div>
+        <input class="btn" type="submit" value="Submit"> 
+</body>
+</html>

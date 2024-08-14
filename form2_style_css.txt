@@ -1,0 +1,153 @@
+body {
+    background-color: gainsboro;
+    margin: 0;
+    font-family: "roboto","noto_sans","noto_sans_sc","noto_sans_jp",Arial,sans-serif;
+
+}
+
+#header {
+    background-image: url('https://tse2.mm.bing.net/th?id=OIP._wGVE-B3S35oZ6QhymDtMQAAAA&pid=Api&P=0&h=180');
+    color:azure;
+    background-repeat: no-repeat;  
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+#heading {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#para {
+    font-size: 24px;
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.left_container, .right_container {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 4px;
+    width: 48%;
+    box-sizing: border-box;
+}
+.left_container{
+    width:70%;
+    margin-right: 20px;
+}
+.right_container{
+    width:50%;
+    height:200px;
+}
+.content {
+    display: flex;
+}
+
+.details {
+    margin-left:10px;
+    margin-right: 20px;
+    width: 50%;
+}
+
+.message {
+    margin-top: 20px;
+    margin-left:10px;
+    width:100%;
+}
+.note{
+    color:gray;
+    font-size: 16px;
+    margin:20px;
+}
+
+input[type=text], select, textarea {
+    background-color: rgb(248, 248, 248);
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #1b1717e5;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+}
+input[type=text]:hover{
+    border-color: rgb(26, 130, 69);
+}
+
+textarea:hover{
+    border-color: rgb(26, 130, 69);
+}
+
+
+input[type=submit] {
+    background-color: rgb(26, 130, 69);
+    color: white;
+    padding: 20px 30px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(14, 82, 42);
+}
+
+.contact li {
+    margin: 10px;
+    list-style-type: none;
+}
+
+.contact li a,.note span a {
+    text-decoration: none;
+    color: rgb(26, 130, 69);
+   
+}
+
+.contact li a:hover {
+    text-decoration:underline;
+}
+.note span a:hover{
+    text-decoration:underline;
+}
+/*laptop view*/
+@media screen and (max-width:1366px){
+    .container-wrapper{
+        flex-direction: column;
+    }
+    .left_container{
+        width:auto;
+    }
+    .right_container{
+        margin-top: 20px;
+    }
+}
+/*mobile view*/
+@media screen and (max-width:480px){
+    .container-wrapper{
+        flex-direction: column;
+    }
+    .left_container{
+        width:auto;
+    }
+    .right_container{
+        margin-top: 20px;
+    }
+}
